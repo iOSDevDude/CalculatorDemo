@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- layout setup -->
+<benosowiecki.com.calculatordemo.CalculatorButtonAreaLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/button_area_numeric"
+    app:numRows="5"
+    app:numCols="1"
+    android:background="@color/button_area_operator_background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="3">
+
+    <!-- Add all the buttons required -->
+    <Button
+        android:id="@+id/button_delete"
+        android:onClick="onButtonClick"
+        android:text="DEL"
+        style="@style/OperatorButtonStyle"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_divide"
+        android:onClick="onButtonClick"
+        android:text="@string/divide_symbol"
+        style="@style/OperatorButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_multiply"
+        android:onClick="onButtonClick"
+        android:text="@string/multiply_symbol"
+        style="@style/OperatorButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_subtract"
+        android:onClick="onButtonClick"
+        android:text="@string/subtract_symbol"
+        style="@style/OperatorButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:onClick="onButtonClick"
+        android:text="@string/add_symbol"
+        style="@style/OperatorButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</benosowiecki.com.calculatordemo.CalculatorButtonAreaLayout>

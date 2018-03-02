@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/display_background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Set up display for expression -->
+    <benosowiecki.com.calculatordemo.CalculatorDisplay
+        android:id="@+id/display_expression"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/DisplayStyle"
+        android:textColor="@color/display_expression_text_color"
+        android:textSize="80dp"
+        android:layout_weight="1"/>
+
+    <!-- Set up display for results -->
+    <benosowiecki.com.calculatordemo.CalculatorDisplay
+        android:id="@+id/display_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/DisplayStyle"
+        android:textColor="@color/display_result_text_color"
+        android:textSize="50dp"
+        android:maxLines="1"
+        android:layout_weight="1"/>
+
+</LinearLayout>
